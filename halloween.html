@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1">
+   <title> Halloween </title>
+<style>
+	img{
+		width:50%;
+	}
+   body{
+   	background-image:url("tree.jpg");
+   	text-align:center;
+
+   }
+   h2{
+   	font-family:cursive;
+   	color:white;
+   }
+   h4{
+   	color:red;
+   	font-family:cursive;
+   }
+   .card {
+      box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      width: 50%; margin-left:25%;margin-right:25%;
+      background-color:lightslategrey;
+   }
+   .card:hover{
+      box-shadow: 0 8px 16px 0rgba(0,0,0,0.2);
+   }
+   .container{
+      padding: 2px 16px;
+      background-color:lightsteelblue;
+      font-family:fantasy;
+      color:purple;
+   }
+</style>
+</head>
+<body>
+
+<h2> Halloween Card </h2>
+<div class="card">
+   <img src="witch.jpg" alt="witch" style="width:45%"/>
+   <div class = "container">
+      <h4><b>witch</b></h4>
+      <p> <br>Happy Halloween! ha ha ha!</p>
+       On a dark night, I invite you to a shabby house in a deep forest.</p>
+   </div>
+</div>
+<button onclick="nonamed()"> Trick Or Treat </button>
+<button onclick="nonamed2()"> Hallucinate </button> <br></br>
+<img id="img1" src="">
+<script type="text/javascript">
+	function nonamed(){
+		document.getElementById("img1").src="candy.jpg";
+	}
+	function nonamed2(){
+		document.getElementById("img1").src="";
+	}
+</script>
+</body>
+</html>
